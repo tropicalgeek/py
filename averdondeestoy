@@ -1,0 +1,95 @@
+
+
+==========================================================
+Version Control with Git - Part 1 of Chipy's Software Engineering Skills for Scientist
+There is often a perceived or real discrepancy between the skills of those planning studies / collecting data, those analyzing that data, and those deploying the results. This can result in barriers to collaboration and communication in a team science environment. Version control is one of these skills, popular with software engineers and data scientists, but which can have a seemingly high steep curve for "regular" Scientists.  
+
+The goal of this tutorial is to remove those barriers so people can become familiar with the technologies each other use so we can increase communication and collaboration. Version control systems in software engineering allow developers to track changes made to code over time and work collaboratively on projects consisting of ever-increasing lines of code. One of the most popular of these version control systems is Git.  
+
+As for Scientists, Git (and version control in general) can be a similarly powerful tool to track both documents and analytic workflows. Scientists can use Git to track changes to papers, models, or datasets, as well as to have a backup repository of their work.  
+
+For Data Scientists in particular, Git can help manage the entire analytics workflow from exploration to analysis to modeling and especially to deployment.  Once the model is ready, the Data Scientist will usually deploy their models into the same systems that the engineers are working in, making it imperative that they understand how to use the same version control tools in this collaborate context.  
+
+
+
+
+
+git es version control tool
+	collaboration
+	reproducibility
+	accountability
+	transparency
+
+distributed version control systems
+uses cryptograpy to secure data- changes to files that are committed are scured hashed.
+stages data with staging area
+branching- allows to keep track of diff versions of files 
+
+forking vs cloning
+	clone creates a local copy - read only purposes
+	forking - if purpose is to submit changes after doing modifications. allows for submit to original.
+		creates a history element.
+		contributor 
+
+git vs github
+	git es la applicacion
+	github es el hub de gits
+
+git clone https://github.com/djhocking/Markdown-for-Manuscripts.
+
+github has its own markdown 
+git add README.md
+git status
+
+git commit -m "comment on the commit"
+
+git diff 
+
+
+https://www.gitignore.io/
+
+			The most commonly used git commands are:
+			   add        Add file contents to the index
+			   bisect     Find by binary search the change that introduced a bug
+			   branch     List, create, or delete branches
+			   checkout   Checkout a branch or paths to the working tree
+			   clone      Clone a repository into a new directory
+			   commit     Record changes to the repository
+			   diff       Show changes between commits, commit and working tree, etc
+			   fetch      Download objects and refs from another repository
+			   grep       Print lines matching a pattern
+			   init       Create an empty Git repository or reinitialize an existing one
+			   log        Show commit logs
+			   merge      Join two or more development histories together
+			   mv         Move or rename a file, a directory, or a symlink
+			   pull       Fetch from and integrate with another repository or a local branch
+			   push       Update remote refs along with associated objects
+			   rebase     Forward-port local commits to the updated upstream head
+			   reset      Reset current HEAD to the specified state
+			   rm         Remove files from the working tree and from the index
+			   show       Show various types of objects
+			   status     Show the working tree status
+			   tag        Create, list, delete or verify a tag object signed with GPG
+
+			'git help -a' and 'git help -g' lists available subcommands and some
+			concept guides. See 'git help <command>' or 'git help <concept>'
+			to read about a specific subcommand or concept.
+
+
+
+git checkout -- filelame
+git revert
+
+
+man git
+
+to combine commits one would use 
+	git rebase -i HEAD~4
+
+	abre una ventana interactiva donde uno escoje que quiere combinar
+	cuando uno lo sube entonces hay que force el commit para que suba pues github se va a quejar de que 
+	ya existe una version con esos commits y que uno esta tratando de subir algo viejo
+
+- esto es como crear otro virtual environment para trabajar
+git branch 
+git checkout
